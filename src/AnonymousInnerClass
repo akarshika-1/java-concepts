@@ -1,0 +1,22 @@
+Nameless implementation inner classes are called Anonymous inner class
+
+We may replace(not everytime) anonymous inner class implementation with lambda expression so that
+the length/complexity of the code can be reduced.
+
+However, anonymous inner class and lambda expression are not same.
+Anonymous inner class is more powerful than lambda expression.
+
+Anonymous inner class can implement an interface with single abstract method.(in this particular case only lambda expression can
+replace anonymous inner class)
+Anonymous inner class can extend concrete class(cant be replaced by lambda expression).
+Anonymous inner class can extend abstract class(cant be replaced by lambda expression).
+Anonymous inner class can implement an interface with multiple abstract methods(cant be replaced by lambda expression).
+
+We can declare instance variable inside anonymous inner class.
+Inside anonymous inner class, 'this' always refer to the current inner class instance variable.
+Inside lambda expression, it is not possible to declare instance variable
+ (the variable inside lambda expression is called local variable).
+Inside lambda expression, 'this' always refer to the outer class instance variable.
+
+The local variables accessed/referenced from lambda expression are implicitly final variables.
+

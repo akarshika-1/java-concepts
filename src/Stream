@@ -1,0 +1,32 @@
+If we want to process objects from java_8.Collection, then we can use stream.
+
+In java 8, stream() method is present inside java_8.Collection interface as default method.
+
+Filtering :
+If we want to filter elements from a java_8.Collection based on some boolean condition,
+then we should go for filtering by using filter() method of java_8.Stream interface.
+
+Mapping :
+If we want to create a new object for every object present in a java_8.Collection based on some function,
+then we should go for mapping by using map() method of java_8.Stream interface.
+
+Processing by collect() method :
+This method collects the elements from the stream and add to the specified java_8.Collection.
+
+Processing by sorted() method :
+We can use to sort method inside stream.
+1- sorted() method is used for default natural sorting order.
+2- sorted(Comparator c) method is used for customized sorting order specified by comparator object.
+
+Other methods are min(), max() and count()
+
+Processing by forEach() method :
+This method wont return anything.
+This method can take lambda expression as an argument and apply that lambda expression for each element
+present in stream.
+
+Processing by toArray() method :
+This method is used to copy elements present in the stream into specified array.
+
+java_8.Stream.of() method :
+We can also apply this method for group of values and for arrays.

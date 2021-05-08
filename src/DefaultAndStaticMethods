@@ -1,0 +1,27 @@
+Until java 7, an interface is allowed to have only abstract methods.
+Every method by default will be public and abstract (until java 7)
+Every variable by default will be public, static, and final (until java 7)
+
+From java 8, we can have concrete methods inside interface.
+Implementation class can use the default method defined inside the interface or it can override the default method also.
+
+Incase of multiple inheritance, and if two or interfaces have same method name then to avoid ambiguity, we can override
+the method by completely new information or we call specify the interface method to be called using super keyword.
+
+Difference between Interface with default methods and Abstract class:
+-> Inside interface, every variable is public, static and final, we can not declare instance variable whereas inside abstract
+class, we can declare instance variables which are required to the child class.
+-> Interface never talks about state of an object whereas abstract class talks about the state  of an object.
+-> Inside interface, we cant declare constructors whereas inside abstract class, we can declare constructor.
+-> Inside interface, we cant declare instance and static blocks whereas inside abstract class, we can declare instance and
+static blocks.
+-> Functional interface with default methods can refer lambda expression whereas abstract class cant refer lambda expression.
+-> Inside interface, we cant override object class methods whereas inside abstract class, we can override object class
+methods.
+
+Interface static methods are not available to the implementation class. We can call them using interface name.
+Therefore, overriding concept is not available for interface static methods.
+
+From java 8 onwards, we can define main method inside an interface and run the interface.
+
+

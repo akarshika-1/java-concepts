@@ -1,0 +1,27 @@
+Java 8 provides predefined functional interfaces inside java.util.function package that we can use
+according to our requirement
+
+-PREDICATE<T>, where T is input type
+ test(T t) is a single abstract method which returns boolean value.
+ This boolean valued function is used to implement conditional checking.
+ Predicate joining : and(), or(), not() are the default methods of Predicate
+ isEqual(T t) is a static method of Predicate
+
+-FUNCTION<T, R> where T is input type and R is return type
+ apply(T t) is a single abstract method
+ Same as Predicate, except it returns any type of value (not just boolean)
+ Function chaining : Two or more functions applied together
+ andThen() is default method used to join two functions together
+ compose() is another default method
+ Example:
+ f1.andThen(f2) implies f1 will be applied followed by f2
+ f1.compose(f2) implies f2 will be applied followed by f1
+ identity() is a static method whose return type is same as input type
+
+-CONSUMER<T> where T is input type
+ accept(T t) is a SAM which returns void.
+ It consumes T type of value, performs required operation, and does not return anything.
+
+-SUPPLIER<R> where R is return type
+ get() is a SAM which does not accept any input and return R type
+ Supplier functional interface does not contain any default or static method.

@@ -1,0 +1,21 @@
+In functional interface, we can have any number of default methods and static methods,
+restriction is only on abstract method i.e. it should have single abstract method.
+
+Need of functional interface:
+We use functional interface to invoke/call lambda expression.
+
+@FunctionalInterface annotation is used to indicate the compiler that it is the functional interface.
+So that while compilation, compiler will error message on violation.
+
+Functional Interface with respect to annotation :
+Case 1 : If an interface extends functional interface and child interface does not contain any abstract method,
+then child interface is always functional interface.
+Case 2 : In the child interface, we can define exactly same parent interface abstract method.
+Case 3 : In the child interface, we cant define any new abstract methods. Otherwise we will get compilation error.
+
+Lambda expression is applicable everywhere there is functional interface is present.
+
+If we want to implement sorting in set/map, then we go for TreeSet/TreeMap.
+TreeSet is a implementation class of Set interface.
+
+

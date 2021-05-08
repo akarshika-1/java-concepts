@@ -1,0 +1,11 @@
+The major advantage of method/constructor reference is code re-usability.
+
+If we want to use method/constructor reference then both methods/constructor should have same argument types.
+
+Syntax for method reference :
+static method->   class name :: method name
+instance method->   object reference :: method name
+
+Functional interface can refer both lambda expression and method/constructor reference.
+Lambda expression can be replaced with method/constructor reference.
+Method/constructor reference is an alternative syntax to lambda expression.
